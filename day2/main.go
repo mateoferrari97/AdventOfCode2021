@@ -78,7 +78,7 @@ func getInput() ([]Command, error) {
 	return depths, nil
 }
 
-func solvePartOne(commands []Command) (area int) {
+func solvePartOne(commands []Command) int {
 	var forward, depth int
 	for _, command := range commands {
 		forward, depth = command.UpdateMeasurementPartOne(forward, depth)
